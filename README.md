@@ -1,2 +1,2 @@
 # pumpBot
-A data tracking bot for the /r/weedstocks subreddit
+An application that collects data from various stock/investing subreddits for trend comparison with actual stock price.
