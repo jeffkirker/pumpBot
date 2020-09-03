@@ -1,0 +1,600 @@
+TGIF	1933 Industries Inc.
+TGIF.WT	1933 Industries Inc. Wts.
+TGIF.DB	1933 Industries Inc.10% 14SEP21
+SAFE	3 Sixty Risk Solutions Ltd.
+JJJ.X	37 Capital Inc.
+FFNT	4Front Ventures Corp.
+SXX	66 Resources Inc.
+JQ	79North Inc. (formerly was TWLV/12 Exploration Inc. until 2020-08-18)
+ATT	Abattis Bioceuticals Corp.
+ACRG.U	Acreage Holdings, Inc.
+XTRX	Adastra Labs Holdings Ltd.
+AOC	Advantagewon Oil Corp.
+ADX	Advantex Marketing International Inc.
+ATHR	Aether Catalyst Solutions, Inc.
+AFI	Affinor Growers Inc.
+AGRA	AgraFlora Organics International Inc
+AGRO	Agrios Global Holdings Ltd.
+AJN	AJN Resources Inc.
+AMS.X	Alchemist Mining Inc. (formerly was AMS/Alchemist Mining Inc. until 2020-08-05)
+AGN.WT	Algernon Pharmaceutical Inc. Wts.
+AGN	Algernon Pharmaceuticals Inc.
+ACG	Alliance Growers Corp.
+AHG	Alternate Health Corp.
+WIFI	American Aires Inc.
+USGD	American Pacific Mining Corp.
+XCX	AMP German Cannabis Group Inc.
+AMPD	AMPD Ventures Inc.
+AFD	Ansar Financial and Dev Corporation
+API	Appia Energy Corp.
+ASTI	Aquarius Surgical Technologies Inc.
+AG.UN	Arctic Glacier Income Fund
+AREV	AREV NanoTec Brands Inc. (formerly was AREV/AREV Brands International Ltd. until 2020-03-18)
+ARQ	Argo Gold Inc.
+ARM	Armada Mercantile Ltd.
+ARO	Armadillo Resources Ltd.
+ASE	Asante Gold Corporation
+ASIA	Asia Green Biotechnology Corp. (formerly was ASIA/Asia Cannabis Corp. until 2020-04-15)
+AWR	Aurwest Resources Corporation (formerly was SRS/Shamrock Enterprises Inc. until 2020-01-07)
+AUSA	Australis Capital Inc.
+AUAG	Auxico Resources Canada Inc.
+AVM.X	Avarone Metals Inc. (formerly was AVM/Avarone Metals Inc. until 2020-04-14)
+ACA	Axiom Capital Advisors Inc.
+AYL	Aylen Capital Inc.
+AYR.RT	Ayr Strategies Inc. Rts.
+AYR.A	Ayr Strategies Inc. S.V.
+AYR.WT	Ayr Strategies Inc. Wts.
+BAC	BacTech Environmental Corporation
+BBR	Bam Bam Resources Corp. (formerly was KOPR/KOPR Point Ventures Inc. until 2019-12-04)
+CRFT	BC Craft Supply Co. Ltd. (formerly was CRFT/Pasha Brands Ltd. until 2020-05-15)
+BEE	Bee Vectoring Technologies International Inc.
+BE	Beleave Inc.
+BLGV	Belgravia Hartford Capital Inc. (formerly was BLGV/Belgravia Capital International Inc. until 2019-12-20)
+BBT	Benchmark Botanics Inc.
+BKS	Berkley Renewables Inc.
+PLNT	Better Plant Sciences Inc. (formerly was BOSS/The Yield Growth Corp. until 2020-08-17)
+BETR	BetterLife Pharma Inc.
+BEV	BevCanna Enterprises Inc.
+BXV	Bexar Ventures Inc.
+BHNG	Bhang Inc.
+BIGG	BIGG Digital Assets Inc (formerly was BIGG/BIG Blockchain Intelligence Group Inc. until 2019-10-03)
+CURE	Biocure Technology Inc.
+BHSC	BioHarvest Sciences Inc.
+BUX	BioMark Diagnostics Inc.
+BIO	Biome Grow Inc.
+ZRO	BIOSENTA Inc.
+BDR	Bird River Resources Inc.
+BRH	BitRush Corp.
+TUSK	Black Tusk Resources Inc.
+BLR	Blackhawk Growth Corp. (formerly was BLR/Blackhawk Resource Corp. until 2020-03-10)
+BLR.WT	Blackhawk Growth Corp. 17DEC2024 Wts.
+BCFN	Blockchain Foundry Inc
+PLAY	Blocplay Entertainment Inc.
+BLK	BLOK Technologies Inc.
+BLLG	Blue Lagoon Resources Inc.
+BBM	Blueberries Medical Corp.
+BTC	Bluesky Digital Assets Corp.
+BTC.PR.A	Bluesky Digital Assets Corp. Pr A (formerly was GPC.PR.A/Gunpowder Capital Corp. Preferred Shares, Series A until 2019-11-29)
+BWEL.U	Bluma Wellness Inc.
+BAMM	Body and Mind Inc.
+BOLT	Bolt Metals Corp. (formerly was BOLT/Pacific Rim Cobalt Corp. until 2020-02-25)
+BJB	Bond Resources Inc.
+BGRD.X	Braingrid Limited (formerly was BGRD/Braingrid Limited until 2020-03-17)
+BXXX	Brand X Lifestyle Corp. (formerly was BXXX/Block X Capital Corp. until 2020-03-27)
+BCA	Bucephalus Capital Corp.
+BFG	Bullfrog Gold Corp.
+BNKR	Bunker Hill Mining Corp.
+BYRN	Byrna Technologies Inc. (formerly was SDZ/Security Devices International Inc. until 2020-03-03)
+CXXI	C21 Investments Inc.
+CDN	Caelan Capital Inc. (formerly was CDN/Caelan Capital Corp. until 2020-04-13)
+CGM	California Gold Mining Inc.
+LILY	Callitas Health Inc.
+CIG	Camarico Investment Group Ltd.
+CRU	Cameo Industries Corp.
+CHV	Canada House Wellness Group Inc.
+CAMP	Canadian GoldCamps Corp. (formerly was ABJ/Supreme Metals Corp. until 2020-08-12)
+CME	Canadian Metals Inc.
+XOP	Canadian Overseas Petroleum Limited
+BULL	Canadian Palladium Resources Inc. (formerly was BULL/21C Metals Inc. until 2020-01-17)
+CNFA	CanaFarma Hemp Products Corp.
+CSQ	Canamex Gold Corp.
+CGOC	Cannabis Growth Opportunity Corporation
+BLO	Cannabix Technologies Inc.
+CANA	CannAmerica Brands Corp.
+CNNA	CannaOne Technologies Inc
+LOVE	Cannara Biotech Inc.
+PILL	Canntab Therapeutics Limited
+TIUM.U	Cansortium Inc.
+TIUM.WT.U	Cansortium Inc. Wts.
+PWR	Captiva Verde Land Corp.
+CPTR	Captor Capital Corp
+CRL	Carl Data Solutions Inc.
+CCC	Carlyle Commodities Corp. (formerly was DLRY/Delrey Metals Corp. until 2020-02-14)
+CFE	Cartier Iron Corporation
+CK	Cascadia Blockchain Group Corp.
+CAT	CAT Strategic Metals Corporation
+CBII	CB2 Insights Inc.
+CBDN	CBD Global Sciences Inc.
+CUBE	CellCube Energy Storage Systems Inc.
+CNTR	CENTR Brands Corp.
+CDPR	Cerro de Pasco Resources Inc.
+CEG	Cerro Grande Mining Corporation
+CBP	Certive Solutions Inc.
+SHRM	Champignon Brands Inc.
+CSI.U	Chemesis International Inc. (formerly was CSI/Chemesis International Inc. until 2020-07-22)
+CHM	Chemistree Technology Inc.
+CHM.WT	Chemistree Technology Inc. Wts.
+CHOO	Choom Holdings Inc.
+CMC	Cielo Waste Solutions Corp.
+CIM	CIM International Group Inc.
+CGRO	Citation Growth Corp.
+CGRO.WT	Citation Growth Corp. Wts.
+CVGR	City View Green Holdings Inc.
+CLAR	Clarity Gold Corp.
+NICO	Class 1 Nickel and Technologies Limited
+CNI	Cloud Nine Education Group Ltd.
+DOC.WT	CloudMD Software & Services Inc. Wts. 02JUN22
+CLSH	CLS Holdings USA, Inc.
+CXC	CMX Gold & Silver Corp.
+CODE	Codebase Ventures Inc.
+CGN	Cognetivity Neurosciences Ltd.
+CCHW	Columbia Care Inc. (formerly was CCHW/Coumbia Care Inc. until 2020-03-31)
+CBK	Copperbank Resources Corp.
+CDVA	CordovaCann Corp.
+CC	Core Assets Corp.
+COOL	Core One Labs Inc.
+CRC	Corsurex Resource Corp.
+CL	Cresco Labs Inc.
+CL.WT	Cresco Labs Inc. S.V. Wts.
+CRES	Crest Resources Inc.
+CRS	Crestview Exploration Inc.
+CRVC	Cross River Ventures Corp.
+CRUZ	Cruz Cobalt Corp.
+CRY	Cryptologic Corp.
+CURA	Curaleaf Holdings, Inc.
+CYN	Cyntar Ventures Inc
+HODL	Cypherpunk Holdings Inc.
+DDI	Debut Diamonds Inc.
+DEEP	DeepRock Minerals Inc.
+DHC	Deer Horn Capital Inc.
+DVR	Deveron UAS Corp.
+DIGI	DigiCrypts Blockchain Solutions Inc.
+DFT	Dimension Five Technologies Inc.
+DCSI	Direct Communication Solutions Inc.
+DIXI.U	Dixie Brands Inc.
+KDZ.X	Dizun International Enterprises Inc. (formerly was KDZ/Dizun International Enterprises Inc. until 2020-05-05)
+DNI	DNI Metals Inc.
+DWR	Dominion Water Reserves Corp.
+DFLY	Draganfly Inc.
+DST	Dundee Sustainable Technologies Inc.
+ERTH	EarthRenew Inc.
+EOM	ECO ORO MINERALS CORP. J
+EDGM	Edgemont Gold Corp.
+TMED	EGF Theramed Health Corp. (formerly was TMED/Theramed Health Corporation until 2019-10-23)
+EMER	Emergia Inc. (formerly was DLMA/The Delma Group Inc. until 2020-01-20)
+CBDT	Empower Clinics Inc
+ETI	EnviroLeach Technologies Inc.
+EPY	ePlay Digital Inc.
+OPI	ESI Energy Services Inc.
+ETR	Etruscus Resources Corp.
+ERKA	Eureka 93 Inc.
+EI	Eurogas International Inc.
+EURO	Eurolife Brands Inc.
+EHC	Eviana Health Corporation
+EVG	Evolving Gold Corp.
+XBLK	eXeBlock Technology Corporation
+EXM	EXMceuticals Inc.
+XRO	Exro Technologies Inc.
+FDM	Fandom Sports Media Corp.
+FANS	FansUnite Entertainment Inc. (formerly was FANS/FansUnite Entertainment Inc until 2020-05-14)
+FAT	Far Resources Ltd.
+FENX	FenixOro Gold Corp.
+CALI	FinCanna Capital Corp.
+FNQ	Fineqia International Inc.
+FLO	Fiorentina Minerals Inc.
+FE	First Energy Metals Limited
+FGFL	First Growth Funds Limited
+WPN	First Responder Technologies Inc.
+FWM	Flow Metals Corp.
+FONE	Flower One Holdings Inc.
+FONE.DB.A	Flower One Holdings Inc. 9.5% 15NOV22
+FONE.DB	Flower One Holdings Inc. 9.5% 28MAR22
+FONE.WT.A	Flower One Holdings Inc. A Wts.
+FONE.WT	Flower One Holdings Inc.Wts.
+FOG	FogChain Corp
+FNAU	Four Nines Gold Inc.
+FOX	Fox River Resources Corporation
+FMAN	Freeman Gold Corp. (formerly was LDG/Lodge Resources Inc. until 2020-05-20)
+HUGE	FSD Pharma Inc. Subordinate Voting Shares
+FFT	Future Farm Technologies Inc.
+GABY	GABY Inc. (formerly was GABY/Gabriella's Kitchen Inc. until 2019-10-21)
+GAIA	Gaia Grow Corp.
+GLL	Gallagher Security Corp.
+GCA	Gencan Capital Inc.
+GGC	Generic Gold Corp.
+GENI	Genius Metals Inc
+GTCH	Getchell Gold Corp.
+GTI.X	Glenbriar Technologies Inc.
+APP	Global Cannabis Applications Corp.
+HLTH	Global Care Capital Inc. (formerly was RIN/Resinco Capital Partners Inc. until 2020-04-16)
+GECC	Global Elsimate Capital Corp. (formerly was CRYP/Cryptobloc Technologies Corp. until 2020-02-05)
+MJRX	Global Health Clinics Ltd.
+GHG	Global Hemp Group Inc.
+GHG.RT	Global Hemp Group Inc. Rts.
+LION	Global Li-Ion Graphite Corp.
+UAV	Global UAV Technologies Ltd.
+SWIS	GlobeX Data Ltd.
+SWIS.WT	GlobeX Data Ltd. Wts.
+GCIT	Glorious Creation Limited
+GOCO	Go Metals Corp
+GL	Gold Lion Resources Inc.
+GPMI	Gold Plus Mining Inc. (formerly was SYDF/Syd Financial Inc. until 2020-03-03)
+FUTR	Gold'Futures Mineral Corp.
+GBLK	Goldblock Capital Inc.
+GBRX	Golden Birch Resources Inc.
+GLM	Golden Lake Exploration Inc.
+GLH	Golden Leaf Holdings Ltd.
+GOH	GoldHaven Resources Corp. (formerly was ALTM/Altum Resource Corp. until 2020-07-02)
+GOR	Goldrea Resources Corp.
+GSK	Goldseek Resources Inc.
+GPK	Grand Peak Capital Corp.
+GBLC	Graph Blockchain Inc
+GRE.X	Graphite Energy Corp. (formerly was GRE/Graphite Energy Corp. until 2020-06-03)
+GFI	Gravitas Financial Inc.
+GRAY	Graycliff Exploration Limited
+GTG	Great Thunder Gold Corp.
+GTBE	Green 2 Blue Energy Corp.
+GGB	Green Growth Brands Inc.
+GGB.WT	Green Growth Brands Inc. Wt
+CCR	Green River Gold Corp.
+GTII	Green Thumb Industries Inc.
+GBC	GreenBank Capital Inc.
+GSTR	GreenStar Biosciences Corp.
+GRIN	Grown Rogue International Inc.
+HBOR	Harborside Inc.
+HARY	Harrys Manufacturing Inc.
+HARV	Harvest Health & Recreation Inc.
+HS	HealthSpace Data Systems Ltd.
+HP	Hello Pal International Inc.
+HFH	Hemp for Health Inc.
+CANN	Heritage Cannabis Holdings Corp.
+CANN.WT	Heritage Cannabis Holdings Corp. Wts.
+HGP	Heritage Global Inc.
+HEY	HeyBryan Media Inc.
+HHS	Hi Ho Silver Resources Inc.
+HGH	High Point Exploration Inc.
+HITI	High Tide Inc.
+HOLL	Hollister Biosciences Inc.
+SIX	Hydro66 Holdings Corp.
+HYPR	HyperBlock Inc.
+BETS	i3 Interactive Inc.
+BETS.WT	i3 Interactive Inc. Wts.
+IAN	iAnthus Capital Holdings Inc.
+IC	IC Capitalight Corp.
+ICAN	Icanic Brands Company Inc (formerly was ICAN/Integrated Cannabis Company Inc. until 2020-02-14)
+ISFT	ICEsoft Technologies Canada Corp.
+ITKO	Idaho Champion Gold Mines Canada Inc.
+IGN	IGEN Networks Corp.
+BILZ	Ignite International Brands, Ltd.S.V.
+IMCC	IM Cannabis Corp.
+IMCC.WT	IM Cannabis Corp. Wts.
+IM	IM Exploration Inc.
+IME	Imagin Medical Inc.
+IP	ImagineAR Inc. (formerly was IP/Imagination Park Technologies until 2020-04-15)
+IMCX	IMC International Mining Corp.
+INDS	Indus Holdings, Inc.
+IDVR	INDVR Brands Inc. (formerly was CBIS/Cannabis One Holdings Inc. until 2020-08-18)
+AUCU	Inflection Resources Ltd.
+ISH	Inner Spirit Holdings Ltd.
+ISH.WT	Inner Spirit Holdings Ltd. - Warrants
+ISH.DB	Inner Spirit Holdings Ltd. 12% 30Jun2022
+INNO	InnoCan Pharma Corporation
+ISM	Inspiration Mining Corporation
+INTL	Intellabridge Technology Corporation (formerly was NITE/Cryptanite Blockchain Technologies Corp. until 2019-10-23)
+IBAT	International Battery Metals Ltd.
+CO	International Cobalt Corp
+IONC	Ionic Brands Corp.
+IRV	Irving Resources Inc.
+ISOL	Isodiol International Inc.
+IPOT	Isracann Biosciences Inc.
+IVOR	Ivor Exploration Inc.
+IZO	Izotropic Corporation
+JBR	James Bay Resources Limited
+JDF	JDF Explorations Inc.
+JNC	JNC Resources Inc.
+JUSH	Jushi Holdings Inc. Class B Subordinate Voting Shares
+KABN	KABN Systems NA Holdings Corp.
+KMI	Karam Minerals Inc.
+KBEV	Koios Beverage Corp.
+KNR	Kontrol Energy Corp.
+ZNK	Kootenay Zinc Corp.
+KWG	KWG Resources Inc.
+KWG.A	KWG Resources Inc. MVS
+LAI	La Imperial Resources Inc.
+LLL	Lanebury Growth Capital Ltd.
+LLP	LeanLife Health Inc.
+LECR	Leocor Gold Inc. (formerly was LECR/Leocor Ventures Inc until 2020-08-04)
+EPIC	Leviathan Natural Products Inc. (formerly was EPIC/Leviathan Cannabis Group Inc. until 2020-07-20)
+LXX	Lexaria Bioscience Corp.
+LHS	Liberty Health Sciences Inc.
+LIDA	Lida Resources Inc. (formerly was LID/Lida Resources Inc. until 2020-06-03)
+LIDO	Lido Minerals Ltd.
+LNK	Link Global Technologies Inc.
+LBM	Lions Bay Mining Corp.
+LLT	Litelink Technologies Inc.
+J	Lotus Ventures Inc.
+LUFF	Luff Enterprises Ltd. (formerly was ASNT/Ascent Industries Corp. until 2020-05-19)
+LUXX	Luxxfolio Holdings Inc.
+MDD	Mag One Products Inc.
+SIZE	Major Precious Metals Corp. (formerly was EZNC/Eastern Zinc Corp. until 2020-06-19)
+MAKA	Makara Mining Corp.
+MANN	Manning Ventures Inc.
+MRBL	Marble Financial Inc. (formerly was MRBL/MLI Marble Lending Inc. until 2019-11-18)
+RNR	Mariner Resources Corp.
+MHY.UN	Marret High Yield Strategies Fund A
+MMF.UN	Marret Multi-Strategy Income Fund A
+MMJ	Matica Enterprises Inc.
+MVT	Maxtech Ventures Inc.
+MCL	McLaren Resources Inc.
+MEC	ME Resource Corp.
+FLYY	Media Central Corporation Inc
+MMEN	MedMen Enterprises Inc. Class B Subordinate Voting Shares
+MMEN.WT	MedMen Enterprises Inc. Wts.
+MXT	MedXtractor Corp.
+NSAU	MegumaGold Corp
+MYR.X	Meryllion Resources Corporation (formerly was MYR/Meryllion Resources Corporation until 2020-06-04)
+MMI	Metalo Manufacturing Inc.
+MMAT	Metamaterial Inc.
+XMG.WT.C	MGX Minerals Inc C Wts
+XMG	MGX Minerals Inc.
+XMG.WT.B	MGX Minerals Inc. B Wts.
+MICH	Mich Resources Ltd (formerly was MICH/Michelin Mining Corp. until 2019-12-03)
+MRM	Micromem Technologies Inc.
+MWM	Micron Waste Technologies Inc
+MIRL	Minera IRL Limited
+MONT	Miramont Resources Corp.
+MIS	Mistango River Resources Inc.
+MJAR	MJardin Group, Inc.
+MEAT	Modern Meat Inc.
+JANE	Mojave Jane Brands Inc.
+MNG	Mongoose Mining Ltd.
+MY.X	Montego Resources Inc. (formerly was MY/Montego Resources Inc. until 2020-07-07)
+MREY	Monterey Minerals Inc.
+MVMD	Mountain Valley MD Holdings Inc.
+MPV	MPV Exploration Inc
+MPXI	MPX International Corporation
+MGRO	MustGrow Biologics Corp.
+MYCO	Mydecine Innovations Group Inc. (formerly was NLB/NewLeaf Brands Inc. until 2020-06-04)
+MYM	MYM Nutraceuticals Inc.
+MMC	Myriad Metals Corp.
+NAB	Nabis Holdings Inc.
+NAB.DB	Nabis Holdings Inc. 8% 26MAR22
+NAB.WT	Nabis Holdings Inc. Wts.
+URL	NameSilo Technologies Corp.
+NSHS	NanoSphere Health Sciences Inc.
+NVG	Nass Valley Gateway Ltd.
+NERD	Nerds On Site Inc.
+NC	NetCents Technology Inc.
+NETC.X	Netcoins Holdings Inc. (formerly was NETC/Netcoins Holdings Inc. until 2019-11-12)
+NLV	New Leaf Ventures Inc.
+NTM	New Tech Minerals Corp.
+SPOR	New Wave Holdings Corp. (formerly was NWES/New Wave Esports Corp. until 2020-05-07)
+SPOR.WT	New Wave Holdings Corp. Wts. (formerly was NWES.WT/New Wave Esports Corp. Wts. until 2020-05-07)
+LUX	Newlox Gold Ventures Corp.
+NXU	Nexco Resources Inc.
+NGW	Next Green Wave Holdings Inc.
+NTAR	NexTech AR Solutions Corp
+OILS	Nextleaf Solutions Ltd.
+NHS	NHS Industries Ltd.
+NOM	Norsemont Mining Inc. (formerly was NOM/Norsemont Capital Inc. until 2020-02-21)
+NBUD	North Bud Farms Inc.
+NLR	Northern Lights Resources Corp.
+NSG	Northstar Gold Corp.
+NOVA	Nova Mentis Life Sciences Corp. (formerly was LIB/Liberty Leaf Holdings Ltd. until 2020-06-25)
+NWI	Nuinsco Resources Limited
+NUR	Nuran Wireless Inc.
+EAT	Nutritional High International Inc.
+OAKY	Oakley Ventures Inc.
+OWLI	One World Lithium Inc.
+ORCD	Orchid Ventures Inc.
+SOW	Organic Flower Investments Group Inc.
+OPC	Organic Potash Corporation
+ORGN	Origen Resources Inc.
+ORI	Orion Nutraceuticals Inc.
+ORTH	Ortho Regenerative Technologies Inc.
+OSO	Osoyoos Cannabis Inc.
+OVAT	Ovation Science Inc
+PACR	Pac Roots Cannabis Corp.
+PKG	ParcelPal Technology Inc.
+PSE	Pasinex Resources Limited
+PGOL	Patriot Gold Corp.
+PKK	Peak Positioning Technologies Inc.
+BEAN	Peekaboo Beans Inc
+PMC	Peloton Minerals Corporation
+PERK	Perk Labs Inc. (formerly was GET/Glance Technologies Inc. until 2020-02-24)
+OIL	Permex Petroleum Corporation
+BUZZ	Pharmadrug Inc. (formerly was BUZZ/Aura Health Inc. until 2019-10-21)
+VIDA	Phivida Holdings Inc.
+NPT	Plaintree Systems Inc.
+PLTH	Planet 13 Holdings Inc.
+PLTH.WT.A	Planet 13 Holdings Inc. 3JUL2022 Warrants
+PLTH.WT	Planet 13 Holdings Inc. Wts
+PTX	Platinex Inc.
+PLUS	Plus Products Inc
+PLUS.DB	Plus Products Inc. - 8% 28FEB21
+PLUS.WT	Plus Products Inc. - Warrants
+PRT	Plymouth Rock Technologies Inc.
+PBT.U	Portage Biotech Inc.
+PBIT	POSaBIT Systems Corporation
+PMED	Predictmedix Inc. (formerly was CULT/Cultivar Holdings Inc. until 2020-04-08)
+PDTI	Preferred Dental Technologies Inc.
+PREV	PreveCeutical Medical Inc.
+PRMO	Primo Nutraceuticals Inc
+PJO	Project One Resources Ltd.
+NUGT	Prophecy Potash Corp.
+PAU	Provenance Gold Corp.
+PDO	PUDO Inc.
+PUSH	Pushfor Investments Inc.
+QBOT	Quantum Cobalt Corp
+QSC	QuestCap Inc. (formerly was QSC/Copper One Inc. until 2019-09-27)
+QCA	Quinsam Capital Corporation
+QQ	Quizam Media Corporation
+RAD	Radial Research Corp
+RDKO	Radiko Holdings Corp. (formerly was RDKO/International Cannabrands Inc. until 2020-07-23)
+RICH	Raffles Financial Group Limited
+RAIN	Rain City Resources Inc.
+RAYN	Raindrop Ventures Inc.
+RAMM	Ramm Pharma Corp.
+RGO.X	Range Energy Resources Inc. (formerly was RGO/Range Energy Resources Inc. until 2020-03-31)
+DOSE	Rapid Dose Therapeutics Corp.
+RQB	Ravenquest BioMed Inc.
+RZR	Razore Rock Resources Inc.
+RGLD	Red Lake Gold Inc.
+TRIP	Red Light Holland Corp.
+RWB	Red White & Bloom Brands Inc.
+LOAN	Redfund Capital Corp.
+RELA	Relay Medical Corp.
+RNG	Reliant Gold Corp.
+RFR	Renforth Resources Inc.
+REO	Reservoir Capital Corp.
+RVV	Revive Therapeutics Ltd.
+RVR	Rift Valley Resources Corp.
+RISE	Rise Gold Corp.
+RLSC	RISE Life Science Corp.
+RMMI	RMMI Corp.
+RCLF	Rockcliff Metals Corporation
+RXM	Rockex Mining Corporation
+RKS	Rockshield Capital Corp.
+ROMJ	Rubicon Organics Inc.
+ROMJ.WT	Rubicon Organics Inc. Wts.
+SASY	Sassy Resources Corporation
+SBD	SBD Capital Corp.
+SCV	Scotch Creek Ventures Inc.
+SHV	Seahawk Ventures Inc.
+SENS	Sensor Technologies Corp (formerly was SENS/Sensor Technologies Inc. until 2020-01-27)
+SNL	Sentinel Resources Corp.
+SHRC	Sharc International Systems Inc.
+SHP	Shoal Point Energy Ltd.
+SGRO	Sierra Growth Corp.
+SLV	Silver Dollar Resources Inc.
+SP	Silver Phoenix Resources Inc.
+SAND	Silver Sands Resources Corp. (formerly was GOOP/Golden Opportunity Resources Corp. until 2020-06-05)
+SIRE	Sire Bioscience Inc.
+SIG	Sitka Gold Corp.
+SIXW	Sixth Wave Innovations Inc.
+SXTY	Sixty North Gold Mining Inc.
+SKRB	Skarb Exploration Corp.
+SKYL	Skyledger Tech Corp.
+SLNG	SLANG Worldwide Inc.
+SLZ	Slave Lake Zinc Corp
+SLE	SLE Synergy Ltd.
+SOFT	Softlab9 Technologies Inc. (formerly was SOFT/Softlab9 Software Solutions Inc until 2020-07-17)
+SOL	SOL Global Investments Corp.
+SONA	Sona Nanotech Inc.
+SPFY	Spacefy Inc.
+EASY	SpeakEasy Cannabis Club Ltd.
+SPMT	Spearmint Resources Inc.
+SPEY	Spey Resources Corp.
+SPO	SponsorsOne Inc.
+SPR	Sproutly Canada Inc.
+SQID	SQID Technologies Limited
+SQX	Squatex Energy and Ressources Inc.
+SX	St-Georges Eco-Mining Corp.
+SNA	Star Navigation Systems Group Ltd.
+STX	Starrex International Ltd.
+STEM	Stem Holdings Inc.
+SG	Stevens Gold Nevada Inc.
+STIL	StillCanna Inc.
+ST	Straightup Resources Inc.
+SSVR	Summa Silver Corp. (formerly was PGG/Pinnacle North Gold Corp. until 2020-04-30)
+SNN	Sunniva Inc.
+SE	Sweet Earth Holdings Corporation
+TAAL	Taal Distributed Information Technologies Inc. (formerly was SQR/Squire Mining Ltd. until 2019-12-13)
+TAAT	TAAT Lifestyle & Wellness Ltd.
+TGC	Taiga Gold Corp
+TAK	Taku Gold Corp.
+TSK	Talisker Resources Ltd.
+TAI	Talmora Diamond Inc.
+TTX	Tantalex Resources Corporation
+TRG	Tarachi Gold Corp. (formerly was KAL/Kal Minerals Corp until 2020-04-07)
+TCI	Target Capital Inc.
+TN	Tartisan Nickel Corp.
+TMAS	Temas Resources Corp.
+TEMP	Tempus Capital Inc.
+TENO	Terra Nova Resources Inc.
+TEQ	Terranueva Corporation
+TER	TerrAscend Corp.
+THC	THC Biomed Intl Ltd
+WTER	The Alkaline Water Company Inc.
+TNY	The Tinley Beverage Company Inc.
+VERY	The Very Good Food Company Inc.
+TBI	Thoughtful Brands Inc. (formerly was MOTA/Mota Ventures Corp. until 2020-08-13)
+IDK	ThreeD Capital Inc.
+TLP.UN	Tier One Capital Limited Partnership
+TILT	TILT Holdings Inc.
+TOC	Tocvan Ventures Corp.
+TE	Top Exploration Inc.
+VENI	Top Strike Resources Corp.
+TO	Tower One Wireless Corp.
+TSF	TraceSafe Inc. (formerly was BCX/Blockchain Holdings Ltd. until 2020-06-18)
+TKR	Tracker Ventures Corp. (formerly was TOOL/Trackloop Analytics Corp. until 2019-10-24)
+TCAN	Transcanna Holdings Inc.
+TCAN.WT	Transcanna Holdings Inc. Wts.
+TOKI	Tree of Knowledge International Corp.
+TFC	Trichome Financial Corp.
+TCF	Trillion Energy International Inc.
+MJ	True Leaf Brands Inc.
+TRUL	Trulieve Cannabis Corp.
+TRUL.DB.U	Trulieve Cannabis Corp. 9.75% 18JUN24
+TTT	TruTrace Technologies Inc.
+TWX.X	TWX Group Holding Limited (formerly was TWX/TWX Group Holding Limited until 2020-05-20)
+UBQ	Ubique Minerals Limited
+UBM	United Battery Metals Corp.
+UPCO	Upco International Inc
+UP	UpSnap Inc.
+URB	Urbana Corporation
+URB.A	Urbana Corporation A NV
+VPH	Valeo Pharma Inc.
+VPH.WT	Valeo Pharma Inc. Wts.
+VEGA	Vegaste Technologies Corp.
+VCT.X	Velocity Data Inc. (formerly was VCT/Velocity Data Inc. until 2020-01-22)
+VCAN	Ventura Cannabis and Wellness Corp.
+VRT	Veritas Pharma Inc.
+VS	Versus Systems Inc.
+VVV	Vert Infrastructure Ltd. (formerly was CROP/Crop Infrastructure Corp. until 2020-01-15)
+VEXT	Vext Science, Inc. (formerly was VAPN/Vapen MJ Ventures Corporation until 2019-11-11)
+VIBE	Vibe Bioscience Ltd.
+NI	Victory Nickel Inc.
+VR	Victory Resources Corporation
+VST	Victory Square Technologies Inc.
+VIN	Vinergy Cannabis Capital Inc.
+VREO	Vireo Health International Inc. S.V.
+VAI	VirtualArmour International Inc.
+VP	Vodis Pharmaceuticals Inc.
+VC	Volatus Capital Corp.
+VYGR	Voyager Digital Ltd. (formerly was VYGR/Voyager Digital (Canada) Ltd. until 2020-07-15)
+VOY	Voyageur Mineral Explorers Corp. (formerly was CZC/Copper Reef Mining Corp. until 2020-08-18)
+VPN	VPN Technologies Inc. (formerly was SAAS/Subscribe Technologies Inc. until 2020-02-27)
+VSBY	VSBLTY Groupe Technologies Corp.
+WAL	Walcott Resources Ltd.
+WAYL	Wayland Group Corp.
+WAYL.WT	Wayland Group Corp. Wts.
+POT	Weekend Unlimited Industries Inc. (formerly was POT/Weekend Unlimited Inc. until 2020-01-20)
+RLG	West Red Lake Gold Mines Inc.
+WUC	Western Uranium & Vanadium Corp.
+WIKI	Wikileaf Technologies Inc.
+SUN	Wildflower Brands Inc.
+WGC	Winston Gold Corp.
+PUMP	World Class Extractions Inc.
+WBIO	WPD Pharmaceuticals Inc. (formerly was WBIO/Westcot Ventures Corp. until 2020-01-13)
+WSM.X	WSM Ventures Corp. (formerly was WSM/World Mahjong Limited until 2020-04-17)
+XRX	XORTX Therapeutics Inc.
+XPHY	XPhyto Therapeutics Corp.
+XSF	XS Financial Inc. (formerly was XS/Xtraction Services Holdings Corp until 2020-06-25)
+PAID	XTM Inc.
+YT	Yukoterre Resources Inc.
+ZBR	Zanzibar Gold Inc.
+ZX	Zenith Exploration Inc.
+ZEU	ZeU Crypto Networks Inc.
+ZAIR	Zinc8 Energy Solutions Inc. (formerly was MGXR/MGX Renewables Inc. until 2020-03-20)
+ZTE	ZTEST Electronics Inc.
