@@ -70,8 +70,13 @@ cse = 'CSE.txt'
 open('CSE_formatted.py', 'w').close()
 cse_formatted = open('CSE_formatted.py', 'a')
 
+otc = 'OTCBB.txt'
+open('OTC_formatted.py', 'w').close()
+otc_formatted = open('OTC_formatted.py', 'a')
+
 parse(nasdaq, nasdaq_formatted, "nasdaq")
 parse(nyse, nyse_formatted, "nyse")
 parse(tsx, tsx_formatted, "tsx")
 parse(tsxv, tsxv_formatted, "tsxv")
 parse(cse, cse_formatted, "cse")
+parse(otc, otc_formatted, "otc")

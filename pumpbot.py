@@ -4,6 +4,8 @@ import getopt
 import sys
 import string
 import os
+import pymongo
+from pymongo import MongoClient
 from textblob import TextBlob
 # VADER can be accessed by the NLTK library.
 import nltk
@@ -16,6 +18,7 @@ from company_dicts.NYSE_formatted import nyse
 from company_dicts.TSX_formatted import tsx
 from company_dicts.TSXV_formatted import tsxv
 from company_dicts.CSE_formatted import cse
+from company_dicts.OTC_formatted import otc
 
 sia = SentimentIntensityAnalyzer()
 
@@ -27,6 +30,15 @@ common_word_file = open(
 common_words = set(line.strip() for line in open(
     '/home/jeffk/pumpBot/company_dicts/common.txt'))
 
+confirmed_word_file = open(
+    '/home/jeffk/pumpBot/company_dicts/confirmed.txt', 'a')
+confirmed_words = set(line.strip() for line in open(
+    '/home/jeffk/pumpBot/company_dicts/confirmed.txt'))
+
+
+client = MongoClient()
+db = client.test_db
+post_collection = db.test_posts
 
 def text_blob_sentiment_top_level(comment):
     analysis = TextBlob(comment)
@@ -100,12 +112,12 @@ def create_post(exchange, comment, word, company):
         "company": company,
         "keyword": word,
         "exchange": exchange,
-        "comment": comment,
+        "commentID": comment.id,
         "commentScore": comment.score,
-        "poster": comment.author,
+        "poster": comment.author.display_name,
         "datePosted": comment.created_utc,
-        "subreddit": comment.subreddit,
-        "thread": comment.submission,
+        "subreddit": comment.subreddit.name,
+        "thread": comment.submission.id,
         "textblobSentiment": "",
         "vaderSentiment": "",
         "textblobPositiveReplies": "",
@@ -115,8 +127,12 @@ def create_post(exchange, comment, word, company):
         "vaderNegativeReplies": "",
         "vaderNeutralReplies": "",
         "multiCompanyPost": "",
-        "userAccountCreationDate": comment.author.created_utc,
+        "userAccountCreationDate": ""
     }
+    try:
+        post["userAccountCreationDate"] = comment.author.created_utc
+    except: 
+        pass
     post["textblobSentiment"] = text_blob_sentiment_top_level(comment.body)
     post["vaderSentiment"] = nltk_sentiment_top_level(comment.body)
     print(post)
@@ -150,21 +166,19 @@ def replies_of(top_level_comment,
                        sub_entries_nltk)
 
 
-def get_comments():
+def get_comments(selectedSubreddits):
     # Get list of already parsed comment IDs to avoid parsing comments more than once
     f = open('comment_ids.txt', 'a')
     parsed_comments = set(line.strip() for line in open('comment_ids.txt'))
     # Get comments from specified subreddits
-    for count, comment in enumerate(reddit.subreddit('weedstocks').comments()):
-        print(count)
+    for count, comment in enumerate(reddit.subreddit(selectedSubreddits).comments(limit=100)):
+        # print(count)
         # If true comment is top level comment in thread
-        print("comment parent id: " + comment.parent_id)
-        print("comment submission id: " + comment.submission.id)
         if comment.parent_id[0:3] == 't3_':
             if comment.id not in parsed_comments:
                 # Add comment id to parsed comments so it is not counted multiple times
-                parsed_comments.add(comment.id)
-                f.write("\n" + comment.id)
+                # parsed_comments.add(comment.id)
+                # f.write("\n" + comment.id)
                 print("----- COMMENT -----")
                 print(comment.body)
                 post_created = False
@@ -192,38 +206,54 @@ def get_comments():
                             print("\tcse: " + word)
                             post_created, post = create_post(
                                 "cse", comment, word, cse[word])
+                        elif word in otc:
+                            print("\totc: " + word)
+                            post_created, post = create_post(
+                                "otc", comment, word, otc[word])
                 # Iterate through every word of the comment and see if they are in the company dicts
                 if post_created:
                     sub_entries_textblob = {
                         'negative': 0, 'positive': 0, 'neutral': 0}
                     sub_entries_nltk = {'negative': 0,
                                         'positive': 0, 'neutral': 0}
-                    replies_of(comment, 0, sub_entries_textblob, sub_entries_nltk)
+                    replies_of(comment, 0, sub_entries_textblob,
+                               sub_entries_nltk)
                     # print(post)
-                    print(sub_entries_nltk)
-                    print(sub_entries_textblob)
+                    post["textblobPositiveReplies"] = sub_entries_textblob["positive"]
+                    post["textblobNegativeReplies"] = sub_entries_textblob["negative"]
+                    post["textblobNeutralReplies"] = sub_entries_textblob["neutral"]
+                    post["vaderPostiveReplies"] = sub_entries_nltk["positive"]
+                    post["vaderNegativeReplies"] = sub_entries_nltk["negative"]
+                    post["vaderNeutralReplies"] = sub_entries_nltk["neutral"]
+                    print(post)
+                    post_collection.insert_one(post)
 
 
 def train_words_helper(exchange, word):
-    if word not in common_words:
+    if word not in common_words and word not in confirmed_words:
         print(exchange + ": " + word)
         confirmation = input("Remove word? y/n: ")
         if confirmation == "y":
             common_words.add(word)
             common_word_file.write("\n" + word)
+        else:
+            confirmed_words.add(word)
+            confirmed_word_file.write("\n" + word)
     else:
         pass
 
 
-def train_words():
+def train_words(selectedSubreddits):
     f = open('comment_ids.txt', 'a')
-
+    print("Training: " + selectedSubreddits)
     parsed_comments = set(line.strip() for line in open('comment_ids.txt'))
-    for comment in reddit.subreddit('weedstocks').comments(limit=100):
+    initial_count = len(common_words)
+    for comment in reddit.subreddit(selectedSubreddits).comments(limit=100):
         if comment.id not in parsed_comments:
             comment_body = comment.body.translate(
                 str.maketrans('', '', string.punctuation)).lower().split()
             print("----- COMMENT -----")
+            print("Subreddit: " + comment.subreddit.id)
             print(comment.body)
             for word in comment_body:
                 if word in nasdaq:
@@ -236,19 +266,30 @@ def train_words():
                     train_words_helper("tsxv", word)
                 elif word in cse:
                     train_words_helper("cse", word)
-    sys.exit(2)
+                elif word in otc:
+                    train_words_helper("otc", word)
+    end_count = len(common_words)
+    diff = end_count - initial_count
+    print("Initial word count: ", initial_count)
+    print("End count: ", end_count)
+    print("Added %d new words" %diff)
 
 
 def main():
     try:
-        opts, args = getopt.getopt(sys.argv[1:], "t", ["train"])
+        opts, args = getopt.getopt(sys.argv[1:], "ts:", ["train", "subreddits"])
     except getopt.GetoptError as err:
         print(err)
         sys.exit(2)
     for o, a in opts:
         if o in ("-t", "--train"):
-            train_words()
-    get_comments()
+            train_words("wallstreetbets")
+            train_words("weedstocks+investing+stocks+pennystocks")
+        elif o in("-s" , "--subreddits"):
+            if a == "wsb":
+                get_comments("wallstreetbets")
+            else:
+                get_comments("weedstocks+investing+stocks+pennystocks")
 
 
 if __name__ == '__main__':
