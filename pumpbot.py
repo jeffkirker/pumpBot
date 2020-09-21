@@ -38,7 +38,7 @@ confirmed_words = set(line.strip() for line in open(
 
 client = MongoClient()
 db = client.test_db
-post_collection = db.test_posts
+
 
 def text_blob_sentiment_top_level(comment):
     analysis = TextBlob(comment)
@@ -114,24 +114,24 @@ def create_post(exchange, comment, word, company):
         "exchange": exchange,
         "commentID": comment.id,
         "commentScore": comment.score,
-        "poster": comment.author.display_name,
+        "poster": comment.author.name,
         "datePosted": comment.created_utc,
-        "subreddit": comment.subreddit.name,
+        "subreddit": comment.subreddit.display_name,
         "thread": comment.submission.id,
         "textblobSentiment": "",
         "vaderSentiment": "",
-        "textblobPositiveReplies": "",
-        "textblobNegativeReplies": "",
-        "textblobNeutralReplies": "",
-        "vaderPostiveReplies": "",
-        "vaderNegativeReplies": "",
-        "vaderNeutralReplies": "",
+        "textblobPositiveReplies": 0,
+        "textblobNegativeReplies": 0,
+        "textblobNeutralReplies": 0,
+        "vaderPostiveReplies": 0,
+        "vaderNegativeReplies": 0,
+        "vaderNeutralReplies": 0,
         "multiCompanyPost": "",
         "userAccountCreationDate": ""
     }
     try:
         post["userAccountCreationDate"] = comment.author.created_utc
-    except: 
+    except:
         pass
     post["textblobSentiment"] = text_blob_sentiment_top_level(comment.body)
     post["vaderSentiment"] = nltk_sentiment_top_level(comment.body)
@@ -171,16 +171,16 @@ def get_comments(selectedSubreddits):
     f = open('comment_ids.txt', 'a')
     parsed_comments = set(line.strip() for line in open('comment_ids.txt'))
     # Get comments from specified subreddits
-    for count, comment in enumerate(reddit.subreddit(selectedSubreddits).comments(limit=100)):
+    for count, comment in enumerate(reddit.subreddit(selectedSubreddits).comments(limit=None)):
         # print(count)
         # If true comment is top level comment in thread
         if comment.parent_id[0:3] == 't3_':
             if comment.id not in parsed_comments:
                 # Add comment id to parsed comments so it is not counted multiple times
-                # parsed_comments.add(comment.id)
-                # f.write("\n" + comment.id)
-                print("----- COMMENT -----")
-                print(comment.body)
+                parsed_comments.add(comment.id)
+                f.write("\n" + comment.id)
+                # print("----- COMMENT -----")
+                # print(comment.body)
                 post_created = False
                 comment_body = comment.body.translate(
                     str.maketrans('', '', string.punctuation)).lower().split()
@@ -212,6 +212,8 @@ def get_comments(selectedSubreddits):
                                 "otc", comment, word, otc[word])
                 # Iterate through every word of the comment and see if they are in the company dicts
                 if post_created:
+                    company_name = post["company"]
+                    company_collection = db[company_name]
                     sub_entries_textblob = {
                         'negative': 0, 'positive': 0, 'neutral': 0}
                     sub_entries_nltk = {'negative': 0,
@@ -226,7 +228,7 @@ def get_comments(selectedSubreddits):
                     post["vaderNegativeReplies"] = sub_entries_nltk["negative"]
                     post["vaderNeutralReplies"] = sub_entries_nltk["neutral"]
                     print(post)
-                    post_collection.insert_one(post)
+                    company_collection.insert_one(post)
 
 
 def train_words_helper(exchange, word):
@@ -272,12 +274,13 @@ def train_words(selectedSubreddits):
     diff = end_count - initial_count
     print("Initial word count: ", initial_count)
     print("End count: ", end_count)
-    print("Added %d new words" %diff)
+    print("Added %d new words" % diff)
 
 
 def main():
     try:
-        opts, args = getopt.getopt(sys.argv[1:], "ts:", ["train", "subreddits"])
+        opts, args = getopt.getopt(sys.argv[1:], "ts:", [
+                                   "train", "subreddits"])
     except getopt.GetoptError as err:
         print(err)
         sys.exit(2)
@@ -285,7 +288,7 @@ def main():
         if o in ("-t", "--train"):
             train_words("wallstreetbets")
             train_words("weedstocks+investing+stocks+pennystocks")
-        elif o in("-s" , "--subreddits"):
+        elif o in ("-s", "--subreddits"):
             if a == "wsb":
                 get_comments("wallstreetbets")
             else:
