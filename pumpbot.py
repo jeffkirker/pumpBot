@@ -37,8 +37,6 @@ confirmed_words = set(line.strip() for line in open(
 
 
 client = MongoClient()
-db = client.test_db
-
 
 def text_blob_sentiment_top_level(comment):
     analysis = TextBlob(comment)
@@ -171,7 +169,7 @@ def get_comments(selectedSubreddits):
     f = open('comment_ids.txt', 'a')
     parsed_comments = set(line.strip() for line in open('comment_ids.txt'))
     # Get comments from specified subreddits
-    for count, comment in enumerate(reddit.subreddit(selectedSubreddits).comments(limit=None)):
+    for count, comment in enumerate(reddit.subreddit(selectedSubreddits).comments(limit=100)):
         # print(count)
         # If true comment is top level comment in thread
         if comment.parent_id[0:3] == 't3_':
@@ -184,6 +182,8 @@ def get_comments(selectedSubreddits):
                 post_created = False
                 comment_body = comment.body.translate(
                     str.maketrans('', '', string.punctuation)).lower().split()
+                    
+                # Iterate through every word of the comment and see if they are in the company dicts
                 for word in comment_body:
                     if word not in common_words:
                         if word in nasdaq:
@@ -210,9 +210,11 @@ def get_comments(selectedSubreddits):
                             print("\totc: " + word)
                             post_created, post = create_post(
                                 "otc", comment, word, otc[word])
-                # Iterate through every word of the comment and see if they are in the company dicts
                 if post_created:
+                    # Each subreddit has its own database
+                    db = client[post["subreddit"]]
                     company_name = post["company"]
+                    # Each company has its own collection
                     company_collection = db[company_name]
                     sub_entries_textblob = {
                         'negative': 0, 'positive': 0, 'neutral': 0}
@@ -229,6 +231,8 @@ def get_comments(selectedSubreddits):
                     post["vaderNeutralReplies"] = sub_entries_nltk["neutral"]
                     print(post)
                     company_collection.insert_one(post)
+            else:
+                break
 
 
 def train_words_helper(exchange, word):
