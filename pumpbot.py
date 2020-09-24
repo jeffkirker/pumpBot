@@ -182,6 +182,8 @@ def get_comments(selectedSubreddits):
                 post_created = False
                 comment_body = comment.body.translate(
                     str.maketrans('', '', string.punctuation)).lower().split()
+                    
+                # Iterate through every word of the comment and see if they are in the company dicts
                 for word in comment_body:
                     if word not in common_words:
                         if word in nasdaq:
@@ -208,7 +210,6 @@ def get_comments(selectedSubreddits):
                             print("\totc: " + word)
                             post_created, post = create_post(
                                 "otc", comment, word, otc[word])
-                # Iterate through every word of the comment and see if they are in the company dicts
                 if post_created:
                     # Each subreddit has its own database
                     db = client[post["subreddit"]]
