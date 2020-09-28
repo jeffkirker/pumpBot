@@ -12,6 +12,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.1.9",
+    "@angular/cdk": "^10.2.2",
     "@angular/common": "~9.1.9",
     "@angular/compiler": "~9.1.9",
     "@angular/core": "~9.1.9",
@@ -22,6 +23,7 @@
     "@clr/angular": "^3.1.8",
     "@clr/icons": "^3.0.0",
     "@clr/ui": "^3.0.0",
+    "@swimlane/ngx-charts": "^16.0.0",
     "@webcomponents/webcomponentsjs": "^2.0.0",
     "angular-in-memory-web-api": "^0.11.0",
     "rxjs": "~6.5.4",
