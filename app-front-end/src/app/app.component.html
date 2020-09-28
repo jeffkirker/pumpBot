@@ -1,6 +1,17 @@
 <div class="main-container">
   <app-header></app-header>
   <div class="content-container">
-    <app-chart-container></app-chart-container>
+    <div class="clr-row">
+      <div class="clr-col">
+          <app-company-select></app-company-select>
+          <app-subreddit-select></app-subreddit-select>
+      </div>
+      <div class="clr-col">
+        <app-chart-container></app-chart-container>
+      </div>
+      <div class="clr-col">
+        <app-details-panel></app-details-panel>
+      </div>
+    </div>
   </div>
 </div>
