@@ -1,1 +1,18 @@
-<p>company-select works!</p>
+<form clrForm  clrLayout="horizontal">
+  <input clrInput placeholder="Company or Ticker" name="company" [(ngModel)]="company" />
+  <select clrSelect name="subreddit" [(ngModel)]="subreddit">
+    <option value="r/WallStreetBets">WallStreetBets</option>
+    <option value="r/PennyStocks">PennyStocks</option>
+    <option value="r/WeedStocks">WeedStocks</option>
+    <option value="r/Stocks">Stocks</option>
+    <option value="r/Investing">Investing</option>
+  </select>
+  <select clrSelect name="exchange" [(ngModel)]="exchange">
+    <option value="NASDAQ">NASDAQ</option>
+    <option value="NYSE">NYSE</option>
+    <option value="OTC">OTC</option>
+    <option value="TSX">TSX</option>
+    <option value="TSXV">TSXV</option>
+    <option value="CSE">CSE</option>
+  </select>
+</form>
