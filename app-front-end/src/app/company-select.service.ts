@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { CompanyForm } from './companyForm';
+import { CompanyDetailService } from './company-detail.service';
+
 @Injectable({
   providedIn: 'root',
 })
 export class CompanySelectService {
-  constructor() {}
+  constructor(private companyDetailService: CompanyDetailService) {}
 
   public companySelectForm = {
     company: 'Tesla, Inc.',
@@ -26,6 +28,7 @@ export class CompanySelectService {
   }
 
   updateCompanyForm(companyForm: CompanyForm) {
-    this.companySelectForm = companyForm;
+    console.log(this.companySelectForm);
+    this.companyDetailService.requestDetails(companyForm);
   }
 }
