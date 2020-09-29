@@ -1,13 +1,13 @@
 <form clrForm  clrLayout="horizontal">
-  <input clrInput placeholder="Company or Ticker" name="company" [(ngModel)]="company" />
-  <select clrSelect name="subreddit" [(ngModel)]="subreddit">
+  <input clrInput placeholder="Company or Ticker" name="company" [(ngModel)]="companyForm.company" />
+  <select clrSelect name="subreddit" [(ngModel)]="companyForm.subreddit">
     <option value="r/WallStreetBets">WallStreetBets</option>
     <option value="r/PennyStocks">PennyStocks</option>
     <option value="r/WeedStocks">WeedStocks</option>
     <option value="r/Stocks">Stocks</option>
     <option value="r/Investing">Investing</option>
   </select>
-  <select clrSelect name="exchange" [(ngModel)]="exchange">
+  <select clrSelect name="exchange" [(ngModel)]="companyForm.exchange">
     <option value="NASDAQ">NASDAQ</option>
     <option value="NYSE">NYSE</option>
     <option value="OTC">OTC</option>

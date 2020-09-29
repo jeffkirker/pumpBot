@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CompanySelectService } from '../company-select.service';
+import { CompanyForm } from '../companyForm';
 
 @Component({
   selector: 'app-details-panel',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsPanelComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private companySelectService: CompanySelectService) { }
+  companyForm: CompanyForm;
   ngOnInit(): void {
+    this.getForm();
   }
 
+  getForm(): void {
+    this.companySelectService.getCompany().subscribe((companyForm) => this.companyForm = companyForm);
+  }
 }
