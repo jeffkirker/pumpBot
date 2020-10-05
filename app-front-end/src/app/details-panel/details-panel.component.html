@@ -1,2 +1,21 @@
-<h3>{{companyDetails.companyName}}</h3>
-<h3>{{companyDetails.exchange}}</h3>
+<div class="card">
+  <div class="card-block">
+    <div class="card-title">{{ companyDetails.companyName }}</div>
+    {{ companyDetails.exchange }}: {{ companyDetails.companyTicker }}
+  </div>
+  <div class="card-block stock-price">
+    ${{ companyDetails.currentPrice }} USD +${{ companyDetails.priceChange }}
+  </div>
+  <div class="card-block">
+    <div class="center">
+      <h3>{{ companyDetails.todaysMentions }}</h3>
+      Mentions today
+      <h4>{{ companyDetails.vaderPositiveMentions }}</h4>
+      Positive
+      <h4>{{ companyDetails.vaderNeutralMentions }}</h4>
+      Neutral
+      <h4>{{ companyDetails.vaderNegativeMentions }}</h4>
+      Negative
+    </div>
+  </div>
+</div>

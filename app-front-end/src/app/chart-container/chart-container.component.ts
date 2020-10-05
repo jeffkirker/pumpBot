@@ -1,48 +1,51 @@
-import { Component, NgModule, OnInit } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { multi } from './mock-data';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
-
+import { Component, OnInit } from '@angular/core';
+import { CompanyDataService } from '../company-data.service';
+import { CompanyData } from '../companyData';
 @Component({
   selector: 'app-chart-container',
   templateUrl: './chart-container.component.html',
-  styleUrls: ['./chart-container.component.css']
+  styleUrls: ['./chart-container.component.css'],
 })
 export class ChartContainerComponent implements OnInit {
+  options: any;
+  constructor(private companyDataService: CompanyDataService) {}
+  data: CompanyData;
   ngOnInit(): void {
+    this.getData();
+    this.options = {
+      legend: {
+        data: ['Stock Price', 'Company Mentions'],
+        align: 'left',
+      },
+      tooltip: {},
+      xAxis: {
+        data: this.data.dates,
+        silent: false,
+        splitLine: {
+          show: false,
+        },
+      },
+      yAxis: {},
+      series: [
+        {
+          name: 'Stock Price',
+          type: 'line',
+          data: this.data.price,
+          animationDelay: (idx) => idx * 10,
+        },
+        {
+          name: 'Company Mentions',
+          type: 'bar',
+          data: this.data.mentions,
+          animationDelay: (idx) => idx * 10 + 100,
+        },
+      ],
+      animationEasing: 'elasticOut',
+      animationDelayUpdate: (idx) => idx * 5,
+    };
   }
-  multi: any[];
-  view: any[] = [700, 300];
 
-  // options
-  legend: boolean = true;
-  showLabels: boolean = true;
-  animations: boolean = true;
-  xAxis: boolean = true;
-  yAxis: boolean = true;
-  showYAxisLabel: boolean = true;
-  showXAxisLabel: boolean = true;
-  xAxisLabel: string = 'Year';
-  yAxisLabel: string = 'Population';
-  timeline: boolean = true;
-
-  colorScheme = {
-    domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5']
-  };
-
-  constructor() {
-    Object.assign(this, { multi });
-  }
-
-  onSelect(data): void {
-    console.log('Item clicked', JSON.parse(JSON.stringify(data)));
-  }
-
-  onActivate(data): void {
-    console.log('Activate', JSON.parse(JSON.stringify(data)));
-  }
-
-  onDeactivate(data): void {
-    console.log('Deactivate', JSON.parse(JSON.stringify(data)));
+  getData(): void {
+    this.companyDataService.getData().subscribe(companyData => (this.data = companyData));
   }
 }

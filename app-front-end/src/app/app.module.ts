@@ -13,6 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { DetailsPanelComponent } from './details-panel/details-panel.component';
 import { CompanySelectComponent } from './company-select/company-select.component';
 import { ChartContainerComponent } from './chart-container/chart-container.component';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,9 @@ import { ChartContainerComponent } from './chart-container/chart-container.compo
     HttpClientModule,
     NgxChartsModule,
     FormsModule,
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts'),
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
