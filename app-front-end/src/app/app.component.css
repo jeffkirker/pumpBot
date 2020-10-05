@@ -1,0 +1,24 @@
+html {
+  background-color: #282a36	;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.row {
+  width: 80%;
+}
+
+.chart-col {
+height: max-content;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,8 @@
+.stock-price {
+  font-size: large;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+}
