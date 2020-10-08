@@ -15,7 +15,7 @@ export class CompanyDetailService {
     return of(this.companyDetails);
   }
 
-  requestDetails(companyForm: CompanyForm) {
+  updateDetails(companyForm: CompanyForm) {
     // TODO: make api call with companyForm fields to get company details
     this.companyDetails.companyName = companyForm.company;
     this.companyDetails.exchange = companyForm.exchange;
