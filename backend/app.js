@@ -1,22 +1,36 @@
-const MongoClient = require("mongodb").MongoClient;
-const assert = require("assert");
+const express = require("express");
+const bodyParser = require("body-parser");
+const path = require("path");
+const mongoose = require("mongoose");
 
-const url = "mongodb://localhost:27017";
+const mentionsRoutes = require("./routes/mentions");
 
-const dbName = "test_db";
+const app = express();
 
-MongoClient.connect(url, function (err, client) {
-  assert.equal(null, err);
-
-  console.log("Connected to server");
-
-  const db = client.db(dbName);
-
-  db.collection("aapl", function (err, collection) {
-    collection.find().toArray(function (err, items) {
-      console.log(items);
-    });
+mongoose.set("useNewUrlParser", true);
+mongoose.set("useUnifiedTopology", true);
+mongoose
+  .connect("mongodb://127.0.0.1:27017/mock-db")
+  .then(() => {
+    console.log("Connected to database");
+  })
+  .catch(() => {
+    console.log("Connection failed");
   });
 
-  client.close();
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+  );
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, PATCH, PUT, DELETE, OPTIONS"
+  );
+  next();
 });
+
+app.use("/api/mentions", mentionsRoutes);
+
+app.listen(4000, () => console.log("Server app listening on port 4000"));
