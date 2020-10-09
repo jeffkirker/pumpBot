@@ -11,7 +11,11 @@ export class ChartContainerComponent implements OnInit {
   constructor(private companyDataService: CompanyDataService) {}
   data: CompanyData;
   ngOnInit(): void {
-    this.getData();
+    this.showData();
+  }
+
+  renderChart(data: CompanyData) {
+    console.log(data)
     this.options = {
       legend: {
         data: ['Stock Price', 'Company Mentions'],
@@ -19,7 +23,7 @@ export class ChartContainerComponent implements OnInit {
       },
       tooltip: {},
       xAxis: {
-        data: this.data.dates,
+        data: data.dates,
         silent: false,
         splitLine: {
           show: false,
@@ -30,13 +34,13 @@ export class ChartContainerComponent implements OnInit {
         {
           name: 'Stock Price',
           type: 'line',
-          data: this.data.price,
+          data: data.price,
           animationDelay: (idx) => idx * 10,
         },
         {
           name: 'Company Mentions',
           type: 'bar',
-          data: this.data.mentions,
+          data: data.mentions,
           animationDelay: (idx) => idx * 10 + 100,
         },
       ],
@@ -44,8 +48,9 @@ export class ChartContainerComponent implements OnInit {
       animationDelayUpdate: (idx) => idx * 5,
     };
   }
-
-  getData(): void {
-    this.companyDataService.getData().subscribe(companyData => (this.data = companyData));
+  showData() {
+    this.companyDataService.getData().subscribe((companyData: CompanyData) => {
+      this.renderChart(companyData[0]);
+    });
   }
 }
