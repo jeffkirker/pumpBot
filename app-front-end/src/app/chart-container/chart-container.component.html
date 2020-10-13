@@ -1,4 +1,8 @@
-<div class="chart-container">
-  <div echarts [options]="options" class="demo-chart"></div>
+<div *ngIf="isLoading">
+  <span class="spinner spinner-inverse"> Loading... </span>
 </div>
-<button (click)="showData()">PLEASE</button>
+<div class="chart-container" *ngIf="!isLoading">
+  <div echarts [options]="options" class="demo-chart"></div>
+  <h3>{{companyData.mentions}}</h3>
+  <!-- <button (click)="getData()">PLEASE</button> -->
+</div>
