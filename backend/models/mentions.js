@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 
 const mentionsSchema = mongoose.Schema({
-  Company: { type: String, required: true },
-  Timeframe: { type: String, required: true },
-  Dates: [{ type: String, required: true }],
+  company: { type: String, required: true },
+  timeframe: { type: String, required: true },
+  dates: [{ type: String, required: true }],
   mentions: {
     overall: [Number],
     vaderPos: [Number],
@@ -13,7 +13,7 @@ const mentionsSchema = mongoose.Schema({
     tbNeu: [Number],
     tbNeg: [Number],
   },
-  Price: [{ type: Number, required: true }],
+  price: [{ type: Number, required: true }],
 });
 
 module.exports = mentionsSchema;
