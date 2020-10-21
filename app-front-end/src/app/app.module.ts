@@ -11,8 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { DetailsPanelComponent } from './details-panel/details-panel.component';
 import { CompanySelectComponent } from './company-select/company-select.component';
-import { ChartContainerComponent } from './chart-container/chart-container.component';
 import { NgxEchartsModule } from 'ngx-echarts';
+import { ChartComponent } from './chart/chart.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
     HeaderComponent,
     DetailsPanelComponent,
     CompanySelectComponent,
-    ChartContainerComponent,
+    ChartComponent,
   ],
   imports: [
     BrowserModule,

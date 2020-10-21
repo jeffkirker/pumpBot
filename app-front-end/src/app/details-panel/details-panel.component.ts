@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { CompanySelectService } from '../company-select.service';
-import { CompanyForm } from '../companyForm';
 import { CompanyDetails } from '../companyDetails';
 import { CompanyDataService } from '../company-data.service';
+import { CompanyFormService } from '../company-form.service';
+import { DETAILS } from '../mock-details';
+import { CompanyDetailService } from '../company-detail.service';
 
 @Component({
   selector: 'app-details-panel',
@@ -10,16 +11,19 @@ import { CompanyDataService } from '../company-data.service';
   styleUrls: ['./details-panel.component.css'],
 })
 export class DetailsPanelComponent implements OnInit {
-  constructor(private companyDataService: CompanyDataService) {}
-  companyForm: CompanyForm;
-  companyDetails: CompanyDetails;
+  constructor(private companyDetailService: CompanyDetailService) {}
+  companyDetails: CompanyDetails = DETAILS;
   ngOnInit(): void {
     this.getDetails();
   }
 
-  getDetails(): void {
-    this.companyDataService
-      .getDetails()
-      .subscribe((companyDetails) => (this.companyDetails = companyDetails));
+  getDetails() {
+    this.companyDetailService.getDetails().subscribe(
+      (companyDetails) => {
+        this.companyDetails = companyDetails;
+      },
+      (err) => console.log(err),
+      () => console.log('Details updated: ', this.companyDetails)
+    );
   }
 }
