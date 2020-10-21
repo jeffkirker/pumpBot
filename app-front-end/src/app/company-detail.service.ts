@@ -4,6 +4,7 @@ import { Observable, of } from 'rxjs';
 
 import { DETAILS } from './mock-details';
 import { CompanyDetails } from './companyDetails';
+import { CompanyFormService } from './company-form.service';
 @Injectable({
   providedIn: 'root',
 })
@@ -11,7 +12,7 @@ export class CompanyDetailService {
   constructor() {}
   companyDetails: CompanyDetails = DETAILS;
 
-  getDetails(): Observable<CompanyDetails> {
+  getDetails() {
     return of(this.companyDetails);
   }
 

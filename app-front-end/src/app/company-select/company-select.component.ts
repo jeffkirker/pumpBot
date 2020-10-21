@@ -1,9 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CompanyDataService } from '../company-data.service';
-import { CompanySelectService } from '../company-select.service';
+import { CompanyFormService } from '../company-form.service';
+import { CompanyData } from '../companyData';
 import { CompanyForm } from '../companyForm';
 
-import {COMPANIES} from '../mock-companies';
+import { COMPANIES } from '../mock-companies';
 
 @Component({
   selector: 'app-company-select',
@@ -12,19 +13,29 @@ import {COMPANIES} from '../mock-companies';
 })
 export class CompanySelectComponent implements OnInit {
   constructor(private companyDataService: CompanyDataService) {}
-  companyForm: CompanyForm;
+  companyForm: CompanyForm = {
+    subreddit: 'wallstreetbets',
+    company: 'tsla',
+    exchange: 'NASDAQ',
+  };
+  companyData: CompanyData;
   companies = COMPANIES;
   ngOnInit(): void {
-    this.fillForm();
+    this.getData();
   }
 
-  fillForm(): void {
+  getData() {
     this.companyDataService
-      .getForm()
-      .subscribe((companyForm) => (this.companyForm = companyForm));
+      .getData(this.companyForm)
+      .subscribe((companyData: CompanyData) => {
+        this.companyData = companyData;
+        this.updateData();
+      }),
+      (err) => console.log(err),
+      () => console.log('Company Data Received');
   }
 
-  updateForm(): void {
-    this.companyDataService.updateCompanyForm(this.companyForm);
+  updateData() {
+    this.companyDataService.updateData(this.companyData);
   }
 }
